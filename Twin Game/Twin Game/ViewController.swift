@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var flipsCountLabel: UILabel!
-    
     @IBOutlet var cardButtons: [UIButton]!
-    
     @IBAction func touchCardButton(_ sender: UIButton) {
         
         flipCount += 1
@@ -30,6 +28,10 @@ class ViewController: UIViewController {
         } else {
             print("Card : ")
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     func updateViewFromModel()  {
@@ -55,12 +57,7 @@ class ViewController: UIViewController {
             let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
             emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
         }
-        return emoji[card.identifier]
-?? "?"    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        return emoji[card.identifier] ?? "?"
     }
 }
 
