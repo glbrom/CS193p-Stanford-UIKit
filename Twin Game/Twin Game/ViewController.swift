@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     lazy var game: Twin = Twin(numberOfPairsOfCard: (cardButtons.count + 1) / 2 )
     
     var flipCount: Int = 0 {
@@ -60,4 +59,8 @@ class ViewController: UIViewController {
         return emoji[card.identifier] ?? "?"
     }
 }
+
+
+
+
 
