@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Twin {
+struct Twin {
     
     private(set) var cards = [Card]()
     
@@ -32,11 +32,11 @@ class Twin {
         }
     }
     
-    func chooseCard(at index: Int) {
+   mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index), "Twin.chooseCard(at: \(index)): chosen index not in the cards")
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index]{
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
