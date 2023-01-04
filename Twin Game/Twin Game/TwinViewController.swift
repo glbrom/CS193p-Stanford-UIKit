@@ -75,6 +75,7 @@ class TwinViewController: UIViewController {
     }
     
     //    private var emojiChoices = ["🐶", "🐼", "🐵", "🦁", "🐸", "🐴", "🐷"]
+    
     private var emojiChoices = "🐶🐼🐵🦁🐸🐴🐷🐦🐣🪱🐢🦐🪲🐕🦢🦮🐋🐠🎄🦖🐔🐽"
     
     private var emoji = [Card : String]()
