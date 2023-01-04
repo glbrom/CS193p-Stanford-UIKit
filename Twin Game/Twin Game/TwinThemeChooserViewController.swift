@@ -62,9 +62,8 @@ class TwinThemeChooserViewController: UIViewController, UISplitViewControllerDel
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     
     }
 }
