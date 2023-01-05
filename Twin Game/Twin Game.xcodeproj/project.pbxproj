@@ -66,8 +66,8 @@
 				04705187294F82E00099C425 /* TwinViewController.swift */,
 				046CFF9C294F986B00480E6A /* Twin.swift */,
 				046CFF9E294F98CD00480E6A /* Card.swift */,
-				04705189294F82E00099C425 /* Main.storyboard */,
 				0404258029638ADA003D10AB /* TwinThemeChooserViewController.swift */,
+				04705189294F82E00099C425 /* Main.storyboard */,
 				04705191294F82E30099C425 /* Info.plist */,
 			);
 			path = "Twin Game";
